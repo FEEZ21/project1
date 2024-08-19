@@ -1,0 +1,532 @@
+/* 787px - 1140 */
+@media screen and (max-width: 1440px) {
+
+
+    .container {
+        /* width: 728px; */
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: flex-start;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .logo {
+        margin-right: 103px;
+    }
+
+    .section-macaroon .container {
+        flex-direction: column;
+    }
+
+    .section-macaroon-info {
+        position: absolute;
+    }
+
+    .section-macaroon-info h1 {
+        margin-bottom: 74px;
+    }
+
+    .section-macaroon-text {
+        margin-bottom: 41px;
+    }
+
+
+    .section-macaroon-image {
+        padding-top: 167px;
+        padding-left: 164px;
+    }
+
+    .section-macaroon-image {
+        width: 529px;
+        max-width: 100%;
+        left: 0;
+        right: 70px;
+    }
+
+    .section-macaroon-image img {
+        max-width: 100%;
+    }
+
+    .aside {
+        padding-top: 119px;
+    }
+
+    .aside-des {
+        flex-direction: column;
+
+    }
+
+    .aside-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside-b-txt {
+        font-size: 45px;
+        font-family: "TavolgaFree";
+        color: rgb(51, 25, 7);
+        line-height: 1.222;
+        text-align: center;
+        margin-bottom: 61px;
+    }
+
+
+    .aside-s-txt {
+        font-size: 18px;
+        font-family: "GilroyRegular";
+        color: rgb(51, 25, 7);
+        line-height: 1.556;
+        text-align: center;
+        width: 668px;
+    }
+
+    .aside-image {
+        width: 302px;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .aside-image img {
+        max-width: 100%;
+    }
+
+    .second-container {
+        width: 728px;
+        max-width: 100%;
+    }
+
+    .aside-bolls {
+        padding: 88px 0 120px 0;
+    }
+
+    .aside-des2 {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+        /* grid-template-rows: repeat(2, 150px); */
+        grid-gap: 87px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buy-block-macaroons {
+        grid-template-columns: repeat(auto-fill, minmax(349px, 2fr));
+        grid-template-rows: repeat(2, 350px);
+        justify-content: end;
+        align-items: center;
+    }
+
+    .third-container {
+        width: 728px;
+    }
+
+    .order-macaroons {
+        padding: 120px 0;
+        position: relative;
+    }
+
+    .order-macaroon-all-text {
+        order: 1;
+    }
+
+    .macaroon-macaron-order {
+        position: absolute;
+        left: 398px;
+        bottom: 42px;
+        order: 2;
+        margin-left: 310px;
+    }
+
+    .macaroon-macaron-order img {
+        width: 329px;
+        margin: 0 auto;
+    }
+
+    .order-strawberry {
+        position: absolute;
+        left: 372px;
+        bottom: 389px;
+        margin-left: 310px;
+    }
+
+    .order-strawberry2 {
+        position: absolute;
+        left: 610px;
+        bottom: 504px;
+        margin-left: 310px;
+    }
+
+    .present {
+        display: none;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(2.5);
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+
+    .section-macaroon {
+        padding-left: 20px;
+    }
+
+    .macaroon-macaron-order {
+        margin-left: 165px;
+    }
+
+    .order-strawberry {
+        margin-left: 165px;
+    }
+
+    .order-strawberry2 {
+        margin-left: 165px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .macaroon-macaron-order {
+        margin-left: 25px;
+    }
+
+    .order-strawberry {
+        margin-left: 25px;
+    }
+
+    .order-strawberry2 {
+        margin-left: 25px;
+    }
+}
+
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: calc(100% - 20px);
+        justify-content: space-between;
+    }
+
+    .header {
+        padding: 34px 0 0 0;
+    }
+    
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 9999;
+        background: #000000c9;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menu ul li a {
+        color: #fff;
+    }
+
+    .menu-item {
+        margin: 15px 0;
+    }
+
+    .menu ul li {
+        display: block;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger svg {
+        width: 36px;
+        height: 36px;
+        /* fill: #000; */
+    }
+
+    .menu.open {
+        display: block;
+        background: #000000c9;
+    }
+
+    .menu .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .section-macaroon {
+        display: flex;
+        padding: 87px 0 43px 0px;
+    }
+
+    .section-macaroon-info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-macaroon-info h1 {
+        font-size: 32px;
+        line-height: 1.25;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .section-macaroon-text {
+        font-size: 16px;
+        line-height: 1.438;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .section-macaroon a {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-macaroon-image {
+        display: flex;
+        padding-left: 0;
+        margin-left: 0;
+        padding-top: 33px;
+
+    }
+
+    .section-macaroon-image img {
+        display: flex;
+        width: 250px;
+        order: 1;
+        max-width: 100%;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    .second-container {
+        width: 345px;
+    }
+
+    .aside-text {
+        max-width: 100%;
+    }
+
+    .aside-b-txt {
+        font-size: 30px;
+        line-height: 1.167;
+        text-align: center;
+        width: 317px;
+        margin-bottom: 40px;
+    }
+
+    .aside-s-txt {
+        font-size: 16px;
+        line-height: 1.437;
+        width: 346px;
+    }
+
+    .aside-des2 {
+        grid-template-columns: repeat(auto-fill, 165px);
+        /* grid-template-rows: repeat(1, 172px); */
+        grid-gap: 36px 15px;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+    }
+
+    .aside-head {
+        font-size: 18px;
+        width: 155px;
+        font-family: "GilroyBold";
+        width: 100%;
+    }
+
+    .aside-bolls {
+        padding: 35px 0 100px 0;
+    }
+
+    .aside-boll {
+        margin: 0 auto;
+    }
+
+    .aside-boll-s-txt {
+        font-size: 13px;
+        width: 165px;
+        height: auto;
+    }
+
+    .buy-macaroon {
+        padding: 100px 0;
+
+    }
+
+    .buy-text {
+        font-size: 30px;
+        font-family: "TavolgaFree";
+        color: rgb(255, 255, 255);
+        line-height: 1.833;
+        text-align: center;
+        margin-bottom: 122px;
+    }
+
+    .buy-block-macaroons {
+        grid-template-columns: repeat(auto-fill, minmax(263px, 1fr));
+        grid-template-rows: none;
+        grid-gap: 142px;
+
+    }
+
+    .buy-block-macaroon {
+        margin: 0 auto;
+    }
+
+    .macaroon-macaron-order img {
+        display: none;
+        margin: 0 auto;
+    }
+
+    .order-strawberry {
+        margin-left: 0;
+    }
+
+    .third-container {
+        max-width: calc(100% - 16px);
+        margin-left: 16px;
+    }
+
+    .order-macaroons {
+        padding: 100px 15px 77px 0;
+    }
+
+    .order-strawberry {
+        left: 290px;
+        bottom: 415px;
+    }
+
+    .order-strawberry img {
+        width: 72px;
+    }
+
+    .order-strawberry2 img {
+        display: none;
+    }
+
+    .order-macaroon-all-text {
+        width: 100%;
+        /* padding: 0 15px; */
+    }
+
+    .order-macaroon-txt {
+        font-size: 30px;
+        font-family: "TavolgaFree";
+        line-height: 1.167;
+        margin-bottom: 44px;
+    }
+
+    .order-macaroon-txt-s {
+        font-size: 16px;
+        font-family: "GilroyRegular";
+        color: rgb(51, 25, 7);
+        line-height: 1.437;
+        margin-bottom: 59px;
+        width: 100%;
+    }
+
+    .button.bottom-button-transparent {
+        width: 375px;
+        box-sizing: border-box;
+    }
+
+    .button.bottom-button-bur {
+        width: 375px;
+        box-sizing: border-box;
+    }
+
+    .order-input {
+        display: flex;
+    }
+
+    .footer {
+        padding: 50px;
+        position: relative;
+        height: 324px;
+        box-sizing: border-box;
+    }
+
+    .footer-items {
+        flex-direction: column;
+    }
+
+    .logo2 {
+        margin-bottom: 40px;
+    }
+
+    .logo2 img {
+        order: 1;
+        display: flex;
+    }
+
+    .mobile2 {
+        order: 2;
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .instagram {
+        order: 3;
+        display: flex;
+    }
+
+    .rights {
+        position: absolute;
+        right: calc(50% - 78px);
+        bottom: 35px;
+    }
+
+}

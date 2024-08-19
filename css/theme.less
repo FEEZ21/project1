@@ -1,0 +1,716 @@
+@main-color: rgb(110, 32, 45);
+@text-color: rgb(255, 255, 255);
+@theme-color: rgba(232, 137, 150, 0.62);
+@textMenu-color: rgba(130, 19, 40, 0.6);
+@itemText-color: rgb(94, 49, 16);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: GilroyExtraBold;
+    src: url("../fonts/Gilroy-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: GilroyMedium;
+    src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: GilroyRegular;
+    src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: TavolgaFree;
+    src: url("../fonts/Tavolga-Free.ttf");
+}
+
+.container {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 38px 0 29px 0;
+    background-color: @theme-color;
+
+    .menu ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        font-size: 14px;
+        font-family: "GilroyMedium";
+        color: rgb(119, 11, 29);
+        margin-left: 40px;
+        text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid transparent;
+    }
+
+    a:hover {
+        border-bottom: 2px solid #821328;
+        transition: all 0.8s ease;
+    }
+}
+
+.mobile {
+    color: #fff;
+    font-family: "GilroyBold";
+    margin-left: 130px;
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+
+.section-macaroon {
+    padding: 126px 0 108px 0;
+    background-color: @theme-color;
+}
+
+.section-macaroon-info {
+    position: relative;
+    z-index: 2;
+
+    h1 {
+        font-size: 55px;
+        font-family: "TavolgaFree";
+        color: @text-color;
+        line-height: 1.091;
+        margin-bottom: 60px;
+    }
+}
+
+
+.section-macaroon-text {
+    font-size: 18px;
+    font-family: "TavolgaFree";
+    color: @text-color;
+    line-height: 1.389;
+    width: 347px;
+    height: 73px;
+    margin-bottom: 80px;
+}
+
+.button {
+    border: 0;
+}
+
+.button.button-bur {
+    display: flex;
+    background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    left: 390px;
+    top: 548px;
+    width: 240px;
+    height: 60px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "GilroyBold";
+    color: @text-color;
+    line-height: 4.444;
+    transition: all 0.5s ease;
+}
+
+.button.button-bur:hover {
+    background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    box-shadow: 0px 5px 9px 1px rgba(130, 19, 40, 0.5);
+    left: 390px;
+    top: 548px;
+    width: 240px;
+    height: 60px;
+}
+
+
+.section-macaroon-image {
+    margin-left: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.section-macaroon-image::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+    border: 1px solid black;
+    z-index: -1;
+}
+
+.section-macaroon-image::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: pulse 2.5s infinite;
+    border: 1px solid black;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+.aside {
+    padding: 119px 0 25px 0;
+    background: #ffefef;
+    position: relative;
+    z-index: 1;
+}
+
+.second-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.aside-des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside-text {
+    width: 475px;
+}
+
+.aside-b-txt {
+    font-size: 45px;
+    font-family: "TavolgaFree";
+    color: @itemText-color;
+    line-height: 1.222;
+    margin-bottom: 60px;
+}
+
+.aside-s-txt {
+    font-size: 18px;
+    font-family: "GilroyRegular";
+    color: @itemText-color;
+    line-height: 1.556;
+    width: 391px;
+}
+
+.aside-image {
+    margin-left: 145px;
+    margin-top: 85px;
+}
+
+.aside-bolls {
+    padding: 59px 0 120px 0;
+    background: #ffefef;
+}
+
+.aside-des2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 87px;
+}
+
+.aside-other {
+    display: inline-block;
+}
+
+.aside-boll {
+    display: grid;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background: #821328;
+    justify-content: center;
+    align-items: end;
+    font-size: 60px;
+    font-family: "GilroyExtraBold";
+    color: @text-color;
+    line-height: 0.75;
+    transition: all 0.5s ease;
+}
+
+.aside-other:hover .aside-boll {
+    background: @theme-color;
+    color: @textMenu-color;
+    transition: all 0.5s ease;
+}
+
+.aside-bolls {
+    span {
+        position: relative;
+        top: 4px;
+    }
+}
+
+.aside-head {
+    font-size: 20px;
+    font-family: "Gilroy";
+    color: @itemText-color;
+    line-height: 2.25;
+}
+
+.aside-boll-s-txt {
+    font-size: 15px;
+    font-family: "GilroyMedium";
+    color: @itemText-color;
+    line-height: 1.333;
+    left: 387px;
+    top: 1468.25px;
+    width: 220px;
+    height: 94px;
+}
+
+.buy-macaroon {
+    padding: 120px 0;
+    background: @theme-color;
+}
+
+.buy-text {
+    font-size: 45px;
+    font-family: "TavolgaFree";
+    color: @text-color;
+    line-height: 1.222;
+    text-align: center;
+    left: 705.844px;
+    top: 1834.755px;
+    margin-bottom: 143px;
+}
+
+.buy-block-macaroons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 29px;
+
+}
+
+.buy-block-macaroon {
+    position: relative;
+    border-width: 2px;
+    border-color: @text-color;
+    border-style: solid;
+    border-radius: 20px;
+    width: 259px;
+    height: 225px;
+
+}
+
+.buy-block-macaroon:hover .buy-image {
+    transform: scale(1.1);
+}
+
+.buy-image {
+    position: absolute;
+    top: -58px;
+    left: 35px;
+    transition: all .5s ease;
+}
+
+
+.buy-macaroon-taste {
+    font-size: 18px;
+    font-family: "TavolgaFree";
+    color: @text-color;
+    text-align: center;
+    margin-top: 109px;
+    margin-bottom: 26px;
+}
+
+.buy-macaroon-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 21px;
+}
+
+.buy-macaroons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-macaroon-txt {
+    font-size: 15px;
+    font-family: "GilroyRegular";
+    color: @text-color;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.buy-macaroon-txt2 {
+    font-size: 15px;
+    font-family: "GilroyRegular";
+    color: @text-color;
+    text-align: left;
+    margin-bottom: 31px;
+}
+
+.button.s-button-bur {
+    display: flex;
+    background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "GilroyBold";
+    color: @text-color;
+    transition: all 0.5s ease;
+    margin-bottom: 27px;
+    left: 502px;
+    top: 2101px;
+    right: 1128px;
+}
+
+.button.s-button-bur:hover {
+    background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    box-shadow: 0px 5px 9px 1px rgba(130, 19, 40, 0.5);
+    transition: all 0.5s ease;
+}
+
+.order-macaroons {
+    padding: 98px 0px 120px 0;
+    background: #ffefef;
+}
+
+.third-container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.order-macaroon {
+    display: flex;
+    position: relative;
+}
+
+.error-input {
+    color: red;
+    margin-bottom: 15px;
+    margin-left: 55px;
+    font-size: 15px;
+    display: none;
+}
+
+.order-strawberry {
+    position: absolute;
+    margin-left: 4px;
+    animation: direction 3s linear infinite alternate;
+}
+
+@keyframes direction {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+
+}
+
+.macaroon-macaron-order {
+    img {
+        margin: 26px 161px 0 31px;
+    }
+}
+
+.order-macaroon-all-text {
+    input {
+        background-color: #ffefef;
+    }
+
+    .order-macaroon-txt {
+        font-size: 45px;
+        font-family: "TavolgaFree";
+        color: @itemText-color;
+        line-height: 1.222;
+        margin-bottom: 41px;
+    }
+
+    .order-macaroon-txt-s {
+        font-size: 18px;
+        font-family: "GilroyRegular";
+        color: @itemText-color;
+        line-height: 1.556;
+        width: 403px;
+        margin-bottom: 48px;
+    }
+
+    .order-choice {
+        font-size: 18px;
+        font-family: "GilroyBold";
+        color: rgb(18, 10, 6);
+        margin-bottom: 21px;
+    }
+
+    .button.button-transparent {
+        display: flex;
+        border-width: 1px;
+        border-color: @textMenu-color;
+        border-style: solid;
+        border-radius: 30px;
+        width: 293px;
+        height: 59px;
+        font-size: 15px;
+        font-family: "GilroyBold";
+        color: rgb(118, 12, 34);
+        line-height: 5.333;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-bottom: 40px;
+    }
+
+    .order-choice-second {
+        font-size: 18px;
+        font-family: "GilroyBold";
+        color: rgb(18, 10, 6);
+        margin-bottom: 22px;
+    }
+
+    .button.bottom-button-transparent {
+        border-width: 1px;
+        border-color: @textMenu-color;
+        border-style: solid;
+        border-radius: 30px;
+        width: 293px;
+        height: 59px;
+        font-size: 15px;
+        font-family: "GilroyBold";
+        color: rgb(118, 12, 34);
+        line-height: 5.333;
+        margin-bottom: 15px;
+    }
+
+    .button.bottom-button-transparent::placeholder {
+        font-size: 15px;
+        font-family: "GilroyBold";
+        color: rgb(118, 12, 34);
+        padding-left: 25px;
+    }
+
+    .button.bottom-button-bur {
+        display: flex;
+        border-radius: 30px;
+        background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+        background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+        background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+        width: 295px;
+        height: 61px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "GilroyBold";
+        color: @text-color;
+        line-height: 4.444;
+    }
+
+    .button.bottom-button-bur:hover {
+        background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+        background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+        background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+        box-shadow: 0px 5px 9px 1px rgba(130, 19, 40, 0.5);
+    }
+
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 224px;
+    right: 78px;
+    text-align: center;
+    width: 499px;
+    font-size: 30px;
+    color: rgba(221, 49, 66, 0.81);
+    z-index: 99999;
+}
+
+.order-strawberry2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: direction2 3s linear infinite alternate .5s;
+}
+
+@keyframes direction2 {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+.footer {
+    padding: 73px 0px 63px 0;
+    background: #c0707c;
+    .footer-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .rights {
+        font-size: 12px;
+        font-family: "GilroyRegular";
+        color: rgb(227, 172, 180);
+        margin-top: 19px;
+    }
+    .instagram {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .instagram-txt {
+        margin-top: 15px;
+        font-size: 16px;
+        font-family: "GilroyBold";
+        color: @text-color;
+    }
+    .mobile2 {
+        color: @text-color;
+        font-family: "GilroyBold";
+    }
+}
+
+.present {
+    display: flex;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 3;
+    align-items: center;
+    .present-lego {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -200px;
+        font-size: 15px;
+        font-family: "GilroyMedium";
+        color: @main-color;
+        line-height: 1.333;
+        border-width: 2px;
+        border-color: @main-color;
+        border-style: solid;
+        border-radius: 10px;
+        background-color: rgb(254, 239, 238);
+        width: 168px;
+        height: 60px;
+        padding-left: 11px;
+        bottom: -100px;
+        transition: bottom 0.3s;
+    }
+    .present-lego::after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        background: rgb(254, 239, 238);
+        position: absolute;
+        right: -9px;
+        border: 2px solid @main-color;
+        ;
+        transform: rotate(45deg);
+        border-left: none;
+        border-bottom: none;
+    }
+}
+
+.present:hover .present-lego {
+    bottom: 10px !important;
+}
+
+.present-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.present-img:hover {
+    box-shadow: 0px 0px 12.6px 2.4px rgba(130, 19, 40, 0.5);
+}
+
+.loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    .loaderBoll {
+        width: 48px;
+        height: 48px;
+        border: 5px solid @text-color;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+    
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
